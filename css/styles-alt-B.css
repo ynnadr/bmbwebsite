@@ -176,7 +176,7 @@ ul {
     position: relative; /* Dibutuhkan jika menggunakan pseudo-element untuk overlay */
 
     /* --- TAMBAHKAN PROPERTI BACKGROUND IMAGE --- */
-    background-image: url('../images/hero-background.jpg'); /* Ganti dengan nama gambar Anda */
+    background-image: url('../images/background4.jpg'); /* Ganti dengan nama gambar Anda */
     background-repeat: no-repeat;
     background-position: center center; /* Posisi gambar di tengah */
     background-size: cover; /* Gambar menutupi seluruh area */
