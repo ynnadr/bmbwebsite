@@ -169,7 +169,7 @@ ul {
 
 /* === Hero Section Alt A === */
 .hero-section-alt-a {
-    background: linear-gradient(rgba(42, 157, 143, 0.8), rgba(38, 70, 83, 0.8)), url('../images/hero-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(42, 157, 143, 0.8), rgba(38, 70, 83, 0.8)), url('../images/background3.jpg') no-repeat center center/cover;
     color: var(--light-color);
     min-height: 50vh;
     display: flex;
