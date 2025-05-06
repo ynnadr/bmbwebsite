@@ -169,34 +169,69 @@ ul {
 
 /* === Hero Section Alt B === */
 .hero-section-alt-b {
-    background-color: var(--grey-bg);
+    /* HAPUS atau KOMENTARI background-color solid yang lama */
+    /* background-color: var(--grey-bg); */
     padding: 60px 0;
-    overflow: hidden; /* Mencegah konten meluber jika ada bg image besar */
+    overflow: hidden; /* Mencegah konten meluber */
+    position: relative; /* Dibutuhkan jika menggunakan pseudo-element untuk overlay */
+
+    /* --- TAMBAHKAN PROPERTI BACKGROUND IMAGE --- */
+    background-image: url('../images/hero-background.jpg'); /* Ganti dengan nama gambar Anda */
+    background-repeat: no-repeat;
+    background-position: center center; /* Posisi gambar di tengah */
+    background-size: cover; /* Gambar menutupi seluruh area */
+    background-color: var(--dark-color); /* Warna fallback jika gambar gagal load */
+    /* --- AKHIR PROPERTI BACKGROUND IMAGE --- */
 }
 
+/* Opsional: Tambahkan Overlay Gelap menggunakan pseudo-element
+   Ini cara yang baik agar tidak perlu membungkus konten dengan div ekstra */
+.hero-section-alt-b::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Hitam semi-transparan (sesuaikan opacity) */
+    z-index: 1; /* Pastikan overlay di bawah konten teks */
+}
+
+
+/* Pastikan Konten Hero di atas Overlay dan Terbaca */
 .hero-container-alt-b {
-   /* Container standar sudah cukup */
+   position: relative; /* Agar bisa menempatkan konten di atas pseudo-element overlay */
+   z-index: 2; /* Pastikan konten (container) di atas overlay (z-index: 1) */
 }
 
 .hero-text {
     max-width: 600px;
     text-align: left;
+    /* Tidak perlu position relative & z-index lagi jika .hero-container-alt-b sudah diatur */
 }
 
+/* --- MODIFIKASI WARNA & SHADOW TEKS HERO --- */
 .hero-text h1 {
+    /* Ganti warna dari gelap ke terang */
+    /* color: var(--dark-color); */
+    color: var(--light-color);
+    /* Tambahkan shadow agar lebih mudah dibaca di atas gambar */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
     font-size: 2.2rem;
-    color: var(--dark-color);
     margin-bottom: 15px;
     line-height: 1.3;
     font-weight: 700;
 }
 
 .hero-text p {
+    /* Ganti warna dari abu-abu ke terang */
+    /* color: #555; */
+    color: #f0f0f0; /* Putih sedikit pudar atau gunakan var(--light-color) */
+     /* Tambahkan shadow agar lebih mudah dibaca di atas gambar */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
     font-size: 1.1rem;
-    color: #555;
     margin-bottom: 30px;
 }
-
 /* === Split Section Layout === */
 .split-section {
     overflow: hidden; /* Mencegah float/layout aneh */
