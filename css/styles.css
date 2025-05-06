@@ -165,7 +165,7 @@ ul {
 }
 
 /* === TAMBAHKAN ATAU MODIFIKASI INI === */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background.jpg'); /* Overlay + Gambar */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background1.gif'); /* Overlay + Gambar */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
