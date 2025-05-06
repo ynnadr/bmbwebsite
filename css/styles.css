@@ -164,6 +164,20 @@ ul {
     padding: 60px 0;
 }
 
+/* === TAMBAHKAN ATAU MODIFIKASI INI === */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/background.jpg'); /* Overlay + Gambar */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #333; /* Fallback color gelap */
+    /* ====================================== */
+}
+
+/* Pastikan konten tetap terlihat di atas overlay/gambar */
+.hero-content {
+    position: relative; /* Agar z-index bekerja jika diperlukan */
+    z-index: 1; /* Pastikan konten di atas background/overlay */
+}
 .hero-content h1 {
     font-size: 2rem; /* Ukuran font mobile */
     margin-bottom: 15px;
