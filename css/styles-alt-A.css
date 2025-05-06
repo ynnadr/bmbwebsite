@@ -177,7 +177,11 @@ ul {
     text-align: center;
     padding: 50px 0;
 }
-
+/* Pastikan konten tetap terlihat di atas overlay/gambar */
+.hero-content {
+    position: relative; /* Agar z-index bekerja jika diperlukan */
+    z-index: 1; /* Pastikan konten di atas background/overlay */
+}
 .hero-section-alt-a .hero-content h1 { /* Target spesifik jika diperlukan */
     font-size: 1.8rem;
     margin-bottom: 10px;
