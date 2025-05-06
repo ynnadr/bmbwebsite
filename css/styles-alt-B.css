@@ -1,0 +1,382 @@
+/* ============================================= */
+/* ===        Bogor MTB - Alternatif B       === */
+/* ============================================= */
+
+/* === Reset Dasar & Global === */
+:root {
+    --primary-color: #2a9d8f; /* Hijau Toska */
+    --secondary-color: #e9c46a; /* Kuning */
+    --dark-color: #264653;    /* Biru Gelap */
+    --light-color: #ffffff;
+    --text-color: #333;
+    --grey-bg: #f8f9fa;
+    --font-family: 'Poppins', sans-serif;
+    --container-width: 90%;
+    --container-max-width: 1100px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--dark-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 40px 0;
+}
+
+.alt-bg {
+    background-color: var(--grey-bg);
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* === Tombol (Buttons) === */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background-color: #248a7e;
+    color: var(--light-color);
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: var(--dark-color);
+}
+
+.btn-secondary:hover {
+    background-color: #d4af5a;
+    color: var(--dark-color);
+}
+
+
+/* === Header & Navigasi (Mobile First) === */
+.site-header {
+    background-color: var(--light-color);
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+}
+/* Logo Image Style (jika pakai gambar) */
+.logo img {
+    max-height: 40px; /* Sesuaikan tinggi logo */
+    width: auto;
+}
+
+.menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+.main-nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--light-color);
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+
+.main-nav .nav-links.active {
+    display: flex;
+}
+
+.main-nav .nav-links li {
+    margin: 10px 0;
+}
+
+.main-nav .nav-links a {
+    color: var(--dark-color);
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+
+/* ============================================= */
+/* ===     Styles Specific for Alt B         === */
+/* ============================================= */
+
+/* === Hero Section Alt B === */
+.hero-section-alt-b {
+    background-color: var(--grey-bg);
+    padding: 60px 0;
+    overflow: hidden; /* Mencegah konten meluber jika ada bg image besar */
+}
+
+.hero-container-alt-b {
+   /* Container standar sudah cukup */
+}
+
+.hero-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 2.2rem;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* === Split Section Layout === */
+.split-section {
+    overflow: hidden; /* Mencegah float/layout aneh */
+}
+.split-section h2 {
+    font-size: 1.8rem;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.split-container {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr; /* 1 kolom di mobile */
+    align-items: center;
+}
+
+.split-image img {
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    object-fit: cover; /* Pastikan gambar mengisi area */
+    max-height: 400px; /* Batasi tinggi gambar agar tidak terlalu dominan */
+}
+
+.split-content {
+    padding: 10px 0;
+}
+
+.split-content .route-difficulty {
+     display: inline-block;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.route-difficulty.easy { background-color: #a7c957; color: #fff; }
+.route-difficulty.medium { background-color: #fca311; color: #fff; }
+.route-difficulty.hard { background-color: #e63946; color: #fff; }
+.route-difficulty.varied { background-color: #6c757d; color: #fff; }
+
+.split-content ul {
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+.split-content li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    position: relative;
+    padding-left: 25px;
+}
+.split-content li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.split-content p {
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* === Blog Section Alt B (List) === */
+.blog-section-alt-b h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: var(--dark-color);
+}
+.blog-list {
+     /* Tidak perlu styling khusus di mobile selain margin */
+}
+.blog-list-item {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.blog-list-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+.blog-list-item time {
+    font-size: 0.8rem;
+    color: #6c757d;
+    display: block;
+    margin-bottom: 5px;
+}
+.blog-list-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+.blog-list-item h3 a {
+    color: var(--dark-color);
+    font-weight: 600;
+}
+.blog-list-item h3 a:hover {
+    color: var(--primary-color);
+}
+.blog-list-item p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* === Footer (Reused Styling) === */
+.site-footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px; /* Pastikan ada jarak */
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+}
+
+
+/* === Media Queries (Tablet & Desktop - Alt B) === */
+
+/* Tablet (misal > 768px) */
+@media (min-width: 768px) {
+     .menu-toggle {
+        display: none;
+    }
+
+    .main-nav .nav-links {
+        display: flex;
+        position: static;
+        background: none;
+        box-shadow: none;
+        width: auto;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .main-nav .nav-links li {
+        margin: 0 15px;
+    }
+
+    /* Alt B specific adjustments */
+    .hero-text h1 { font-size: 3rem; }
+    .hero-text p { font-size: 1.2rem; }
+
+    .split-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    /* Membalik urutan untuk section dengan class .reverse */
+    .split-section.reverse .split-image {
+        order: 2;
+    }
+    .split-section.reverse .split-content {
+        order: 1;
+    }
+
+    .split-content {
+        padding: 0; /* Hapus padding vertikal di desktop */
+    }
+
+    .blog-list {
+        max-width: 800px; /* Batasi lebar list */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Desktop (misal > 1024px) */
+@media (min-width: 1024px) {
+     .hero-text h1 { font-size: 3.8rem; }
+
+     .split-container {
+         gap: 70px; /* Jarak lebih besar lagi jika perlu */
+     }
+}
