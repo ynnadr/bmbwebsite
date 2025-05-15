@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en"> <!-- Default ke English -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bogor Mountain Biking Adventures - Jelajahi Jalur MTB Terbaik</title>
-    <meta name="description" content="Temukan rute sepeda gunung (MTB), tips, dan komunitas di Bogor. Jelajahi Gunung Pancar, Sentul, dan lainnya.">
+    <title id="pageTitle"></title>
+    <meta name="description" content="" id="metaDescription">
     <link rel="stylesheet" href="css/styles-alt-B.css">
-    <!-- Contoh Google Fonts (Opsional) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,103 +15,90 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <!-- <img src="images/logo.png" alt="Bogor MTB Logo"> -->
-                <a href="#">Bogor MTB</a>
+                <a href="#" id="logoText">Bogor MTB</a>
             </div>
             <nav class="main-nav">
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
                 <ul class="nav-links">
-                    <li><a href="#featured-routes">Rute Populer</a></li>
-                    <li><a href="#tips-guides">Tips & Guide</a></li>
-                    <li><a href="#latest-news">Blog</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#route-highlight" id="navPopularRoutes"></a></li> <!-- Perhatikan href mungkin beda -->
+                    <li><a href="#essential-tips" id="navTipsGuides"></a></li>      <!-- Perhatikan href mungkin beda -->
+                    <li><a href="#latest-news-alt-b" id="navBlog"></a></li>        <!-- Perhatikan href mungkin beda -->
+                    <li><a href="#" id="navAboutUs"></a></li>
+                    <li><a href="#" id="navContact"></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- ... (Head dan Header sama) ... -->
-
-<main>
-    <!-- Hero Section - Layout Berbeda -->
-    <section id="hero-alt-b" class="hero-section-alt-b">
-        <div class="container hero-container-alt-b">
-            <div class="hero-text">
-                <h1>Petualangan Dimulai di Sini</h1>
-                <p>Bogor menawarkan jalur sepeda gunung kelas dunia. Kami memandumu.</p>
-                <a href="#route-highlight" class="btn btn-primary">Lihat Rute Utama</a>
+    <main>
+        <!-- Hero Section - Alt B -->
+        <section id="hero-alt-b" class="hero-section-alt-b">
+            <div class="container hero-container-alt-b">
+                <div class="hero-text">
+                    <h1 id="heroTitle_altB"></h1>
+                    <p id="heroParagraph_altB"></p>
+                    <a href="#route-highlight" class="btn btn-primary" id="heroButton_altB"></a>
+                </div>
             </div>
-             <!-- Gambar bisa jadi background section atau elemen terpisah -->
-        </div>
-    </section>
+        </section>
 
-    <!-- Route Highlight Section (Contoh Layout Split) -->
-    <section id="route-highlight" class="split-section section-padding">
-        <div class="container split-container">
-            <div class="split-image">
-                <img src="images/gunung_pancar3.jpg" alt="Gowes seru di Gunung Pancar" loading="lazy">
+        <!-- Route Highlight Section (Layout Split) -->
+        <section id="route-highlight" class="split-section section-padding">
+            <div class="container split-container">
+                <div class="split-image">
+                    <img src="" alt="" loading="lazy" id="routeHighlightImage_altB">
+                </div>
+                <div class="split-content">
+                    <h2 id="routeHighlightTitle_altB"></h2>
+                    <span class="route-difficulty" id="routeHighlightDifficulty_altB"></span>
+                    <p id="routeHighlightDescription_altB"></p>
+                    <a href="#" class="btn btn-secondary" id="routeHighlightButton_altB"></a>
+                </div>
             </div>
-            <div class="split-content">
-                <h2>Rute Unggulan: Gunung Pancar</h2>
-                <span class="route-difficulty easy">Pemula - Menengah</span>
-                <p>Jalur pinus yang ikonik dengan udara sejuk dan trek yang menyenangkan. Cocok untuk pemanasan atau gowes santai bersama teman.</p>
-                <a href="#" class="btn btn-secondary">Detail Jalur Pancar</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Tips Section (Contoh Layout Split Terbalik) -->
-     <section id="essential-tips" class="split-section section-padding alt-bg reverse">
-        <div class="container split-container">
-             <div class="split-image">
-                 <img src="images/cross_country.jpg" alt="Merawat sepeda gunung" loading="lazy"> <!-- Gambar ilustrasi tips -->
-             </div>
-             <div class="split-content">
-                <h2>Siap Taklukkan Medan?</h2>
-                <ul>
-                    <li>✓ Cek Tekanan Ban & Rem</li>
-                    <li>✓ Bawa Toolkit & Pompa Mini</li>
-                    <li>✓ Kenali Rute & Tingkat Kesulitan</li>
-                    <li>✓ Jangan Lupa Hidrasi!</li>
-                </ul>
-                <a href="#" class="btn btn-secondary">Lihat Semua Tips</a>
+        <!-- Tips Section (Layout Split Terbalik) -->
+         <section id="essential-tips" class="split-section section-padding alt-bg reverse">
+            <div class="container split-container">
+                 <div class="split-image">
+                     <img src="" alt="" loading="lazy" id="essentialTipsImage_altB">
+                 </div>
+                 <div class="split-content">
+                    <h2 id="essentialTipsTitle_altB"></h2>
+                    <ul id="essentialTipsList_altB">
+                        <!-- List item akan di-generate oleh JS -->
+                    </ul>
+                    <a href="#" class="btn btn-secondary" id="essentialTipsButton_altB"></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Blog Snippet Section (Bisa pakai grid card seperti Alt A atau list sederhana) -->
-    <section id="latest-news-alt-b" class="blog-section-alt-b section-padding">
+        <!-- Blog Snippet Section (Layout List) -->
+        <section id="latest-news-alt-b" class="blog-section-alt-b section-padding">
+            <div class="container">
+                <h2 id="latestNewsTitle_altB"></h2>
+                <div class="blog-list" id="blogListContainer_altB">
+                    <!-- Konten blog list akan di-generate oleh JS -->
+                </div>
+                 <div class="text-center" style="margin-top: 30px;">
+                     <a href="#" class="btn btn-secondary" id="latestNewsViewAll_altB"></a>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
         <div class="container">
-            <h2>Dari Komunitas</h2>
-            <div class="blog-list">
-                <article class="blog-list-item">
-                     <time datetime="2024-03-10">10 Mar 2024</time>
-                     <h3><a href="#">Review Jalur Baru di Kawasan XYZ</a></h3>
-                     <p>Tantangan baru dengan pemandangan menakjubkan...</p>
-                 </article>
-                 <article class="blog-list-item">
-                     <time datetime="2024-02-25">25 Feb 2024</time>
-                      <h3><a href="#">Tips Merawat Sepeda Setelah Hujan</a></h3>
-                     <p>Jaga performa sepeda Anda di musim hujan...</p>
-                 </article>
-            </div>
-             <div class="text-center" style="margin-top: 30px;">
-                 <a href="#" class="btn btn-secondary">Blog Lengkap</a>
-             </div>
-        </div>
-    </section>
-
-</main>
-
-
-        <footer class="site-footer section-padding">
-        <div class="container">
-            <p>© <span id="current-year"></span> Bogor Mountain Biking Adventures. All Rights Reserved.</p>
-            <!-- Tambahkan link sosial media atau navigasi footer lainnya jika perlu -->
+            <p id="copyrightText">© <span id="current-year"></span></p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Language Switcher -->
+    <div id="language-switcher" class="language-switcher">
+        <button data-lang="en" class="lang-btn active">EN</button>
+        <button data-lang="id" class="lang-btn">ID</button>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
