@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "pageTitle": "Bogor Mountain Biking Adventures - Explore the Best MTB Trails",
+    "metaDescription": "Discover mountain biking (MTB) routes, tips, and community in Bogor. Explore Gunung Pancar, Sentul, and more."
+  },
+  "menu": {
+    "popularRoutes": "Popular Routes",
+    "tipsGuides": "Tips & Guides",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contact": "Contact"
+  },
+  "sections": {
+    "hero": {
+      "title": "Explore the Best MTB Trails in Bogor",
+      "paragraph": "Find unforgettable mountain biking adventures amidst Bogor's beautiful nature.",
+      "buttonText": "View Popular Routes",
+      "backgroundImage": "hero-background.jpg"
+    },
+    "featuredRoutes": {
+      "title": "Featured Routes For You",
+      "routes": [
+        {
+          "id": "pancar",
+          "image": "gunung_pancar1.jpg",
+          "alt": "Gunung Pancar trail",
+          "title": "Gunung Pancar",
+          "difficultyClass": "easy",
+          "difficultyText": "Beginner - Intermediate",
+          "description": "Enjoy cool pine tracks with varied climbs and descents.",
+          "buttonText": "View Details"
+        },
+        {
+          "id": "sentul",
+          "image": "sentul.jpg",
+          "alt": "Sentul area trail",
+          "title": "Sentul Area (KTH/JPG)",
+          "difficultyClass": "medium",
+          "difficultyText": "Intermediate - Advanced",
+          "description": "Challenge your adrenaline on technical trails with hilly views.",
+          "buttonText": "View Details"
+        },
+        {
+          "id": "other",
+          "image": "new_rute.jpg",
+          "alt": "Other MTB trails",
+          "title": "Other Routes",
+          "difficultyClass": "varied",
+          "difficultyText": "Varied",
+          "description": "Discover more hidden and interesting trails around Bogor.",
+          "buttonText": "Explore All"
+        }
+      ]
+    },
+    "tipsGuides_default": {
+      "title": "Tips & Riding Guides",
+      "items": [
+        { "title": "Preparation Before Riding", "description": "Ensure your bike is in top condition, bring water, and basic tools.", "linkText": "Read More →" },
+        { "title": "Trail Navigation", "description": "Use map apps or follow local guides to avoid getting lost.", "linkText": "Navigation Tips →" },
+        { "title": "Riding Safety", "description": "Always wear a helmet, gloves, and pay attention to trail conditions.", "linkText": "Safety Guide →" }
+      ]
+    },
+    "tipsGuides_altA": {
+        "title": "Essential Tips & Guides",
+        "items": [
+            { "title": "Preparation Before Riding", "description": "Ensure bike is prime, bring water, and basic gear.", "linkText": "Read More →" },
+            { "title": "Trail Navigation", "description": "Use map apps or follow guides to stay on track.", "linkText": "Navigation Tips →" },
+            { "title": "Riding Safety", "description": "Always wear a helmet and mind the trail conditions.", "linkText": "Safety Guide →" }
+        ]
+    },
+    "latestNews_default": {
+      "title": "Latest Updates",
+      "posts": [
+        { "date": "Mar 10, 2024", "datetime": "2024-03-10", "title": "Review of New Trail in XYZ Area", "snippet": "Recently we tried a new challenging trail at...", "linkText": "Read More" },
+        { "date": "Feb 25, 2024", "datetime": "2024-02-25", "title": "Tips for Bike Maintenance After Rain", "snippet": "Rainy season is here, don't forget to care for your beloved bike...", "linkText": "Read More" }
+      ],
+      "viewAllButton": "View All Posts"
+    },
+    "latestNews_altA": {
+        "title": "Updates & Latest News",
+        "posts": [
+            { "image": "new_rute.jpg", "alt": "New trail review", "date": "Mar 10, 2024", "datetime": "2024-03-10", "title": "Review of New Trail in XYZ Area", "snippet": "Recently we tried a new challenging trail...", "linkText": "Read More →" },
+            { "image": "blog-thumb2.jpg", "alt": "Bike maintenance tips", "date": "Feb 25, 2024", "datetime": "2024-02-25", "title": "Tips for Bike Maintenance After Rain", "snippet": "Rainy season is here, don't forget to care for your bike...", "linkText": "Read More →" }
+        ],
+        "viewAllButton": "View All Posts"
+    },
+    "hero_altB": {
+        "title": "Adventure Starts Here",
+        "paragraph": "Bogor offers world-class mountain biking trails. We guide you.",
+        "buttonText": "View Main Route",
+        "backgroundImage": "hero-background.jpg"
+    },
+    "routeHighlight_altB": {
+        "title": "Featured Route: Gunung Pancar",
+        "image": "gunung_pancar3.jpg",
+        "alt": "Fun ride at Gunung Pancar",
+        "difficultyClass": "easy",
+        "difficultyText": "Beginner - Intermediate",
+        "description": "Iconic pine trail with cool air and enjoyable tracks. Perfect for a warm-up or a relaxed ride with friends.",
+        "buttonText": "Pancar Trail Details"
+    },
+    "essentialTips_altB": {
+        "title": "Ready to Conquer the Terrain?",
+        "image": "cross_country.jpg",
+        "alt": "Mountain bike care",
+        "tips": [
+            "✓ Check Tire Pressure & Brakes",
+            "✓ Bring Toolkit & Mini Pump",
+            "✓ Know Your Route & Difficulty Level",
+            "✓ Don't Forget Hydration!"
+        ],
+        "buttonText": "View All Tips"
+    },
+    "latestNews_altB": {
+        "title": "From the Community",
+        "posts": [
+            { "date": "Mar 10, 2024", "datetime": "2024-03-10", "title": "Review of New Trail in XYZ Area", "link": "#", "snippet": "A new challenge with breathtaking views..." },
+            { "date": "Feb 25, 2024", "datetime": "2024-02-25", "title": "Tips for Bike Maintenance After Rain", "link": "#", "snippet": "Keep your bike performing in the rainy season..." }
+        ],
+        "viewAllButton": "Full Blog"
+    },
+    "footer": {
+        "copyrightText": "Bogor Mountain Biking Adventures. All Rights Reserved."
+    }
+  }
+}
