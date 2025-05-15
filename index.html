@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en"> <!-- Default ke English -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bogor Mountain Biking Adventures - Jelajahi Jalur MTB Terbaik</title>
-    <meta name="description" content="Temukan rute sepeda gunung (MTB), tips, dan komunitas di Bogor. Jelajahi Gunung Pancar, Sentul, dan lainnya.">
+    <!-- Title dan Meta Description akan diisi oleh JS -->
+    <title id="pageTitle"></title>
+    <meta name="description" content="" id="metaDescription">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- Contoh Google Fonts (Opsional) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,17 +16,16 @@
     <header class="site-header">
         <div class="container">
             <div class="logo">
-                <!-- <img src="images/logo.png" alt="Bogor MTB Logo"> -->
-                <a href="#">Bogor MTB</a>
+                <a href="#" id="logoText">Bogor MTB</a> <!-- ID untuk teks logo jika perlu -->
             </div>
             <nav class="main-nav">
                 <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
                 <ul class="nav-links">
-                    <li><a href="#featured-routes">Rute Populer</a></li>
-                    <li><a href="#tips-guides">Tips & Guide</a></li>
-                    <li><a href="#latest-news">Blog</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Kontak</a></li>
+                    <li><a href="#featured-routes" id="navPopularRoutes"></a></li>
+                    <li><a href="#tips-guides" id="navTipsGuides"></a></li>
+                    <li><a href="#latest-news" id="navBlog"></a></li>
+                    <li><a href="#" id="navAboutUs"></a></li>
+                    <li><a href="#" id="navContact"></a></li>
                 </ul>
             </nav>
         </div>
@@ -34,105 +33,60 @@
 
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="hero-section">
+        <section id="hero" class="hero-section"> <!-- ID untuk background image -->
             <div class="hero-content container">
-                <h1>Jelajahi Jalur MTB Terbaik di Bogor</h1>
-                <p>Temukan petualangan sepeda gunung tak terlupakan di tengah keindahan alam Bogor.</p>
-                <a href="#featured-routes" class="btn btn-primary">Lihat Rute Populer</a>
+                <h1 id="heroTitle"></h1>
+                <p id="heroParagraph"></p>
+                <a href="#featured-routes" class="btn btn-primary" id="heroButton"></a>
             </div>
         </section>
 
         <!-- Featured Routes Section -->
         <section id="featured-routes" class="featured-routes-section section-padding">
             <div class="container">
-                <h2>Rute Pilihan Untukmu</h2>
-                <div class="routes-grid">
-                    <article class="route-card">
-                        <img src="images/gunung_pancar1.jpg" alt="Jalur Gunung Pancar" loading="lazy">
-                        <div class="card-content">
-                            <h3>Gunung Pancar</h3>
-                            <span class="route-difficulty easy">Pemula - Menengah</span>
-                            <p>Nikmati trek pinus yang sejuk dengan variasi tanjakan dan turunan.</p>
-                            <a href="#" class="btn btn-secondary">Lihat Detail</a>
-                        </div>
-                    </article>
-                    <article class="route-card">
-                        <img src="images/sentul.jpg" alt="Jalur Sentul" loading="lazy">
-                        <div class="card-content">
-                            <h3>Sentul Area (KTH/JPG)</h3>
-                            <span class="route-difficulty medium">Menengah - Mahir</span>
-                            <p>Tantang adrenalinmu di jalur teknikal dengan pemandangan perbukitan.</p>
-                            <a href="#" class="btn btn-secondary">Lihat Detail</a>
-                        </div>
-                    </article>
-                    <article class="route-card">
-                        <img src="images/new_rute.jpg" alt="Jalur Lain" loading="lazy">
-                         <div class="card-content">
-                            <h3>Rute Lainnya</h3>
-                             <span class="route-difficulty varied">Beragam</span>
-                            <p>Temukan lebih banyak jalur tersembunyi dan menarik di sekitar Bogor.</p>
-                            <a href="#" class="btn btn-secondary">Jelajahi Semua</a>
-                        </div>
-                    </article>
+                <h2 id="featuredRoutesTitle"></h2>
+                <div class="routes-grid" id="routesGridContainer">
+                    <!-- Konten akan di-generate oleh JS -->
                 </div>
             </div>
         </section>
 
-        <!-- Tips & Guides Section -->
+        <!-- Tips & Guides Section (Default) -->
         <section id="tips-guides" class="tips-section section-padding alt-bg">
             <div class="container">
-                <h2>Tips & Panduan Gowes</h2>
-                 <div class="tips-grid">
-                    <div class="tip-item">
-                        <h4>Persiapan Sebelum Gowes</h4>
-                        <p>Pastikan sepeda dalam kondisi prima, bawa air minum, dan peralatan dasar.</p>
-                        <a href="#">Baca Selengkapnya →</a>
-                    </div>
-                     <div class="tip-item">
-                        <h4>Navigasi Jalur</h4>
-                        <p>Gunakan aplikasi peta atau ikuti panduan lokal agar tidak tersesat.</p>
-                        <a href="#">Tips Navigasi →</a>
-                    </div>
-                     <div class="tip-item">
-                        <h4>Keselamatan Berkendara</h4>
-                        <p>Selalu gunakan helm, sarung tangan, dan perhatikan kondisi jalur.</p>
-                         <a href="#">Panduan Keselamatan →</a>
-                    </div>
+                <h2 id="tipsGuidesTitle_default"></h2>
+                 <div class="tips-grid" id="tipsGridContainer_default">
+                    <!-- Konten akan di-generate oleh JS -->
                  </div>
             </div>
         </section>
 
-         <!-- Latest News/Blog Section -->
+         <!-- Latest News/Blog Section (Default) -->
         <section id="latest-news" class="blog-section section-padding">
             <div class="container">
-                 <h2>Update Terbaru</h2>
-                 <div class="blog-grid">
-                     <article class="blog-post-snippet">
-                         <time datetime="2024-03-10">10 Mar 2024</time>
-                         <h3>Review Jalur Baru di Kawasan XYZ</h3>
-                         <p>Baru-baru ini kami mencoba jalur baru yang menantang di... <a href="#">Baca Lebih Lanjut</a></p>
-                     </article>
-                     <article class="blog-post-snippet">
-                         <time datetime="2024-02-25">25 Feb 2024</time>
-                         <h3>Tips Merawat Sepeda Setelah Hujan</h3>
-                         <p>Musim hujan tiba, jangan lupa merawat sepeda kesayangan agar tetap awet... <a href="#">Baca Lebih Lanjut</a></p>
-                     </article>
+                 <h2 id="latestNewsTitle_default"></h2>
+                 <div class="blog-grid" id="blogGridContainer_default">
+                     <!-- Konten akan di-generate oleh JS -->
                  </div>
                  <div class="text-center">
-                     <a href="#" class="btn btn-secondary">Lihat Semua Postingan</a>
+                     <a href="#" class="btn btn-secondary" id="latestNewsViewAll_default"></a>
                  </div>
             </div>
         </section>
-
     </main>
 
     <footer class="site-footer section-padding">
         <div class="container">
-            <p>© <span id="current-year"></span> Bogor Mountain Biking Adventures. All Rights Reserved.</p>
-            <!-- Tambahkan link sosial media atau navigasi footer lainnya jika perlu -->
+            <p id="copyrightText">© <span id="current-year"></span></p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- Language Switcher -->
+    <div id="language-switcher" class="language-switcher">
+        <button data-lang="en" class="lang-btn active">EN</button>
+        <button data-lang="id" class="lang-btn">ID</button>
+    </div>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
