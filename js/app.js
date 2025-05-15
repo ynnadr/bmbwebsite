@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTextContent('heroParagraph', data.sections.hero.paragraph);
             setTextContent('heroButton', data.sections.hero.buttonText);
             // Pastikan path benar dan gambar ada
-            heroSectionDefault.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/${data.sections.hero.backgroundImage}')`;
+            heroSectionDefault.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/${data.sections.hero.backgroundImage}')`;
         } else if (heroSectionAltA && data.sections.hero) { // Asumsi Alt A pakai data hero yang sama
             const heroContentAltA = heroSectionAltA.querySelector('.hero-content');
             if (heroContentAltA) {
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTextContent(heroContentAltA.querySelector('p'), data.sections.hero.paragraph);
                 setTextContent(heroContentAltA.querySelector('.btn-primary'), data.sections.hero.buttonText);
             }
-            heroSectionAltA.style.backgroundImage = `linear-gradient(rgba(42, 157, 143, 0.8), rgba(38, 70, 83, 0.8)), url('../images/${data.sections.hero.backgroundImage}')`;
+            heroSectionAltA.style.backgroundImage = `linear-gradient(rgba(42, 157, 143, 0.8), rgba(38, 70, 83, 0.8)), url('images/${data.sections.hero.backgroundImage}')`;
         } else if (heroSectionAltB && data.sections.hero_altB) {
             const heroTextAltB = heroSectionAltB.querySelector('.hero-text');
             if (heroTextAltB) {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 setTextContent(heroTextAltB.querySelector('p'), data.sections.hero_altB.paragraph);
                 setTextContent(heroTextAltB.querySelector('.btn-primary'), data.sections.hero_altB.buttonText);
             }
-            heroSectionAltB.style.backgroundImage = `url('../images/${data.sections.hero_altB.backgroundImage}')`;
+            heroSectionAltB.style.backgroundImage = `url('images/${data.sections.hero_altB.backgroundImage}')`;
         }
         // --- Akhir Logika Hero Backgrounds ---
 
