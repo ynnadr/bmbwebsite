@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "pageTitle": "Bogor Mountain Biking Adventures - Jelajahi Jalur MTB Terbaik",
+    "metaDescription": "Temukan rute sepeda gunung (MTB), tips, dan komunitas di Bogor. Jelajahi Gunung Pancar, Sentul, dan lainnya."
+  },
+  "menu": {
+    "popularRoutes": "Rute Populer",
+    "tipsGuides": "Tips & Panduan",
+    "blog": "Blog",
+    "aboutUs": "Tentang Kami",
+    "contact": "Kontak"
+  },
+  "sections": {
+    "hero": {
+      "title": "Jelajahi Jalur MTB Terbaik di Bogor",
+      "paragraph": "Temukan petualangan sepeda gunung tak terlupakan di tengah keindahan alam Bogor.",
+      "buttonText": "Lihat Rute Populer",
+      "backgroundImage": "hero-background.jpg"
+    },
+    "featuredRoutes": {
+      "title": "Rute Pilihan Untukmu",
+      "routes": [
+        {
+          "id": "pancar",
+          "image": "gunung_pancar1.jpg",
+          "alt": "Jalur Gunung Pancar",
+          "title": "Gunung Pancar",
+          "difficultyClass": "easy",
+          "difficultyText": "Pemula - Menengah",
+          "description": "Nikmati trek pinus yang sejuk dengan variasi tanjakan dan turunan.",
+          "buttonText": "Lihat Detail"
+        },
+        {
+          "id": "sentul",
+          "image": "sentul.jpg",
+          "alt": "Jalur area Sentul",
+          "title": "Sentul Area (KTH/JPG)",
+          "difficultyClass": "medium",
+          "difficultyText": "Menengah - Mahir",
+          "description": "Tantang adrenalinmu di jalur teknikal dengan pemandangan perbukitan.",
+          "buttonText": "Lihat Detail"
+        },
+        {
+          "id": "other",
+          "image": "new_rute.jpg",
+          "alt": "Jalur MTB lainnya",
+          "title": "Rute Lainnya",
+          "difficultyClass": "varied",
+          "difficultyText": "Beragam",
+          "description": "Temukan lebih banyak jalur tersembunyi dan menarik di sekitar Bogor.",
+          "buttonText": "Jelajahi Semua"
+        }
+      ]
+    },
+    "tipsGuides_default": {
+      "title": "Tips & Panduan Gowes",
+      "items": [
+        { "title": "Persiapan Sebelum Gowes", "description": "Pastikan sepeda dalam kondisi prima, bawa air minum, dan peralatan dasar.", "linkText": "Baca Selengkapnya →" },
+        { "title": "Navigasi Jalur", "description": "Gunakan aplikasi peta atau ikuti panduan lokal agar tidak tersesat.", "linkText": "Tips Navigasi →" },
+        { "title": "Keselamatan Berkendara", "description": "Selalu gunakan helm, sarung tangan, dan perhatikan kondisi jalur.", "linkText": "Panduan Keselamatan →" }
+      ]
+    },
+     "tipsGuides_altA": {
+        "title": "Tips & Panduan Esensial",
+        "items": [
+            { "title": "Persiapan Sebelum Gowes", "description": "Pastikan sepeda prima, bawa air, dan peralatan dasar.", "linkText": "Baca Selengkapnya →" },
+            { "title": "Navigasi Jalur", "description": "Gunakan aplikasi peta atau ikuti panduan agar tidak tersesat.", "linkText": "Tips Navigasi →" },
+            { "title": "Keselamatan Berkendara", "description": "Selalu gunakan helm dan perhatikan kondisi jalur.", "linkText": "Panduan Keselamatan →" }
+        ]
+    },
+    "latestNews_default": {
+      "title": "Update Terbaru",
+      "posts": [
+        { "date": "10 Mar 2024", "datetime": "2024-03-10", "title": "Review Jalur Baru di Kawasan XYZ", "snippet": "Baru-baru ini kami mencoba jalur baru yang menantang di...", "linkText": "Baca Lebih Lanjut" },
+        { "date": "25 Feb 2024", "datetime": "2024-02-25", "title": "Tips Merawat Sepeda Setelah Hujan", "snippet": "Musim hujan tiba, jangan lupa merawat sepeda kesayangan agar tetap awet...", "linkText": "Baca Lebih Lanjut" }
+      ],
+      "viewAllButton": "Lihat Semua Postingan"
+    },
+    "latestNews_altA": {
+        "title": "Update & Berita Terbaru",
+        "posts": [
+            { "image": "new_rute.jpg", "alt": "Ulasan jalur baru", "date": "10 Mar 2024", "datetime": "2024-03-10", "title": "Review Jalur Baru di Kawasan XYZ", "snippet": "Baru-baru ini kami mencoba jalur baru yang menantang...", "linkText": "Baca Lebih Lanjut →" },
+            { "image": "blog-thumb2.jpg", "alt": "Tips merawat sepeda", "date": "25 Feb 2024", "datetime": "2024-02-25", "title": "Tips Merawat Sepeda Setelah Hujan", "snippet": "Musim hujan tiba, jangan lupa merawat sepeda kesayangan...", "linkText": "Baca Lebih Lanjut →" }
+        ],
+        "viewAllButton": "Lihat Semua Postingan"
+    },
+    "hero_altB": {
+        "title": "Petualangan Dimulai di Sini",
+        "paragraph": "Bogor menawarkan jalur sepeda gunung kelas dunia. Kami memandumu.",
+        "buttonText": "Lihat Rute Utama",
+        "backgroundImage": "hero-background.jpg"
+    },
+    "routeHighlight_altB": {
+        "title": "Rute Unggulan: Gunung Pancar",
+        "image": "gunung_pancar3.jpg",
+        "alt": "Gowes seru di Gunung Pancar",
+        "difficultyClass": "easy",
+        "difficultyText": "Pemula - Menengah",
+        "description": "Jalur pinus yang ikonik dengan udara sejuk dan trek yang menyenangkan. Cocok untuk pemanasan atau gowes santai bersama teman.",
+        "buttonText": "Detail Jalur Pancar"
+    },
+    "essentialTips_altB": {
+        "title": "Siap Taklukkan Medan?",
+        "image": "cross_country.jpg",
+        "alt": "Merawat sepeda gunung",
+        "tips": [
+            "✓ Cek Tekanan Ban & Rem",
+            "✓ Bawa Toolkit & Pompa Mini",
+            "✓ Kenali Rute & Tingkat Kesulitan",
+            "✓ Jangan Lupa Hidrasi!"
+        ],
+        "buttonText": "Lihat Semua Tips"
+    },
+    "latestNews_altB": {
+        "title": "Dari Komunitas",
+        "posts": [
+            { "date": "10 Mar 2024", "datetime": "2024-03-10", "title": "Review Jalur Baru di Kawasan XYZ", "link": "#", "snippet": "Tantangan baru dengan pemandangan menakjubkan..." },
+            { "date": "25 Feb 2024", "datetime": "2024-02-25", "title": "Tips Merawat Sepeda Setelah Hujan", "link": "#", "snippet": "Jaga performa sepeda Anda di musim hujan..." }
+        ],
+        "viewAllButton": "Blog Lengkap"
+    },
+    "footer": {
+        "copyrightText": "Bogor Mountain Biking Adventures. Hak Cipta Dilindungi."
+    }
+  }
+}
