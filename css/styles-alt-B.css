@@ -415,3 +415,38 @@ ul {
          gap: 70px; /* Jarak lebih besar lagi jika perlu */
      }
 }
+
+/* Language Switcher */
+.language-switcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    display: flex;
+    gap: 5px;
+}
+
+.lang-btn {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.lang-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.lang-btn.active {
+    background-color: var(--primary-color); /* Gunakan warna primer Anda */
+    color: white;
+    border-color: var(--primary-color);
+}
